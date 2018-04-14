@@ -1,5 +1,5 @@
 <?php
-use Illuminate\Support\Facades\DB;
+use DB;
 
 if(isset($_POST)){
 	$user = $_POST['user'];

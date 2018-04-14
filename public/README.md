@@ -25,3 +25,7 @@ Note:
 	- With of PHP 7.1, some OS distributions may require you to manually install the PHP JSON extension. When using Ubuntu, this can be done via apt-get install php7.1-json.
 	- Since php 5.4 or higher, we don't need xampp or wampp server. Use the following command to start development server:
 		php artisan serve
+
+3. Config
+	- Add app/Http/Controller directory to the classmap in composer.json 
+	
