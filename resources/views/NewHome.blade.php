@@ -1,17 +1,14 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Trang chủ</title>
-	<link rel="stylesheet" type="text/css" href="../css/style_home.css">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style_home.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/jquery.js"></script>
-	<script src="../js/theme.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/theme.js"></script>
 </head>
 
 <body>
@@ -19,7 +16,7 @@ session_start();
 		<div class="row clearfix">
 			<div class="little-head">
 				<div class="sign-btn tbutton small">
-					<span><a href="Login.html">Đăng nhập</a></span>
+					<span><a href="{{route ('Login') }}">Đăng nhập</a></span>
 				</div>
 
 				<div class="social social-head">

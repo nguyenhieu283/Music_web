@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\DB;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,10 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
+
+Route::view('/', 'NewHome')->name('home');
+Route::get('/Login', function(){
+	return view('Login');
+}) -> name('Login');
+
+Route::post('/Check_Login', 'Login@check')->name('Check_Login');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+

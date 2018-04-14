@@ -28,4 +28,10 @@ Note:
 
 3. Config
 	- Add app/Http/Controller directory to the classmap in composer.json 
-	
+
+4. The router allows you to register routes that respond to any HTTP verb. So should config all routes in routes/web.php
+	Systax: Route::request($uri, $callback);
+	Ex: Route::get('/', function(){return view('home');});
+
+5. To use xampp mysql database with lavarel, run cmd:
+	php artisan migrate

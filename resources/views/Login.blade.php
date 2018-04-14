@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>Login</title>
-	<link href="../css/style_login.css" rel="stylesheet">
-	<script src="../js/jquery.js"></script>
+	<link href="css/style_login.css" rel="stylesheet">
+	<script src="js/jquery.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
 			$('.forgot-pass').click(function(event) {
@@ -19,34 +19,27 @@
 </head>
 <body>
 	<script type="text/javascript">
-		// use jquery to post user and pass to server
-		$(document).ready(function() {
-			$("#sign-in").click(function(){
-				var data = $.post("../php/Check_Login.php", {'user':user.value, 'pass':pass.value});
-				data.done(function(response){
-					if(response.length == 1){
-						window.location = "./NewHome.html"; // link to Home page when login successful
-					}else{
-						$("#confirm").html(response);
-					}
-				});
-				data.fail(function(response){
-					alert("error");
-				});
+		$("#sign-in").click(function(){
+			var data = $.get( "{{ route('Check_Login') }}");
+			data.done(function(response){
+				$("#confirm").html(response);
+			});
+			data.fail(function(response){
+				alert("error");
 			});
 		});
-
 	</script>
 
 	<div class="wrap">
 		<p class="form-title">
 		Sign In</p>
-		<form class="login">
+		<form class="login" method="POST" action="{{ route('Check_Login') }}">
+			@csrf
 			<div>
-				<input type="text" name = "user" id= "user" placeholder="Username" />
+				<input type="text" name ="user" id= "user" placeholder="Username" />
 				<input type="password" name="pass" id= "pass" placeholder="Password" />
-				<input type="button" name = "sign_in" id="sign-in" value="Sign In"/>
-				<input type="button" name = "sign_up" id="sign-up" value="Sign Up">
+				<input type="submit" name = "sign_in" id="sign-in" value="Sign In"/>
+				<input type="submit" name = "sign_up" id="sign-up" value="Sign Up">
 			</div>		
 			<div class="remember-forgot">
 				<div class="row">
