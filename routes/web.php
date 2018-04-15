@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\DB;
 
 
 Route::view('/', 'NewHome')->name('home');
+Route::post('/registerUser', 'SignUp@register')->name('registerUser');
+Route::view('/SignUp', 'SignUp')->name('SignUp');
 Route::get('/Login', function(){
 	return view('Login');
 }) -> name('Login');

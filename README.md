@@ -37,3 +37,6 @@ Note:
 	php artisan migrate
 
 6. Note: DO NOT push your .env file to github. Just push .env.example
+
+7. To create flashed session use the following statement:
+	redirect('$route') -> with('$session_name', 'return_value');

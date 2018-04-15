@@ -55,7 +55,7 @@ form
     color: #28B463;
 }
 
-.login input[type="submit"]
+.login input[type="submit"], input[type="button"]
 {
     width: 80px;
     font-size: 14px;
@@ -67,7 +67,7 @@ form
     letter-spacing: 1px;
 }
 
-.login input[type="submit"]:hover
+.login input[type="submit"]:hover, input[type="button"]:hover
 {
     transition: background-color 0.5s ease;
 }

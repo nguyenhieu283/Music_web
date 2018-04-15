@@ -18,18 +18,6 @@
 	</script>
 </head>
 <body>
-	<script type="text/javascript">
-		$("#sign-in").click(function(){
-			var data = $.get( "{{ route('Check_Login') }}");
-			data.done(function(response){
-				$("#confirm").html(response);
-			});
-			data.fail(function(response){
-				alert("error");
-			});
-		});
-	</script>
-
 	<div class="wrap">
 		<p class="form-title">
 		Sign In</p>
@@ -39,7 +27,9 @@
 				<input type="text" name ="user" id= "user" placeholder="Username" />
 				<input type="password" name="pass" id= "pass" placeholder="Password" />
 				<input type="submit" name = "sign_in" id="sign-in" value="Sign In"/>
-				<input type="submit" name = "sign_up" id="sign-up" value="Sign Up">
+				<input type="button" name = "sign_up" id="sign-up" value="Sign Up" 
+				onclick="window.location.href='{{route('SignUp')}}'"/>
+
 			</div>		
 			<div class="remember-forgot">
 				<div class="row">
@@ -53,9 +43,11 @@
 						<div class="forgot-pass-content">
 							<a style="cursor: pointer;" class="forgot-pass">Forgot Password</a>
 						</div>
+						@if (session('status'))
 						<div id="confirm">
-
+							{{ session('status') }}
 						</div>
+						@endif
 					</div>
 				</div>
 			</div>

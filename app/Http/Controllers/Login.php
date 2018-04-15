@@ -17,7 +17,9 @@ class Login extends Controller{
 
 		}
 		else{
-			echo "Login failed. User or password is not correct";
+
+			// update flashed session and redirect to Login.blade.php
+			return redirect('Login')->with('status', 'Login failed. User or password is not correct');
 
 		}
 
