@@ -40,3 +40,14 @@ Note:
 
 7. To create flashed session use the following statement:
 	redirect('$route') -> with('$session_name', 'return_value');
+
+8. Create master page:
+	- Create masterpage.blade.php containt @yield('name') to present html code
+	- Create another page which you want to extends masterpage.
+	+ use @extends('masterpage')
+	+ create html code for your page inside @section('name') and @endsection
+
+9. storage/app: containt local file
+   storage/app/public: contain public file that can be access from the web
+
+10. Default directory for files in local: storage/app

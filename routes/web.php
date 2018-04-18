@@ -13,14 +13,21 @@ use Illuminate\Support\Facades\DB;
 
 
 
-Route::view('/', 'NewHome')->name('home');
-Route::post('/registerUser', 'SignUp@register')->name('registerUser');
-Route::view('/SignUp', 'SignUp')->name('SignUp');
+
+Route::post('/registerUser', 'SignUp@register') -> name('registerUser');
+Route::view('/signup', 'SignUp')-> name('SignUp');
 Route::get('/Login', function(){
 	return view('Login');
 }) -> name('Login');
-
-Route::post('/Check_Login', 'Login@check')->name('Check_Login');
+Route::view('/', 'NewHome') -> name('home');
+Route::post('/checklogin', 'Login@check') -> name('Check_Login');
+Route::view('/nghenhieu', 'NgheNhieu') -> name('NgheNhieu');
+Route::view('/nghesi', 'NgheSi') -> name('NgheSi');
+Route::view('/quocgia', 'QuocGia') -> name('QuocGia');
+Route::view('/mv', 'MV') -> name('MV');
+Route::view('/theloai', 'TheLoai') -> name('TheLoai');
+Route::view('/vip', 'VIP') -> name('VIP');
+Route::view('/demo', 'demo')-> name('demo');
 Auth::routes();
 
 

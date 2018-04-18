@@ -45,7 +45,7 @@ form input[type="email"]:focus {
   background: #fff;
 }
 form span {
-  display: block;
+  display: none;
   background: #F9A5A5;
   padding: 2px 5px;
   color: #666;
