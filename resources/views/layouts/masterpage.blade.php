@@ -100,7 +100,7 @@
 			<img src="image/slider9.jpg">
 		</div>
 		<div class="slides">
-			<img src="image/img1.jpg">
+			<img src="image/6.jpg">
 		</div>
 
 		<!-- Next and previous buttons -->

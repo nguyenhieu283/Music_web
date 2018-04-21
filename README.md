@@ -51,3 +51,16 @@ Note:
    storage/app/public: contain public file that can be access from the web
 
 10. Default directory for files in local: storage/app
+
+11. Use the following command to response download file:
+    response()->download('file_path');
+    
+12. Create model classes to contain and define database relationship by following command:
+    php artisan make:model Model
+
+13. Load data from csv file into database:
+    load data INFILE 'filename.csv' into TABLE tablename
+    FIELDS TERMINATED by ';'
+    ENCLOSED by '"' lines TERMINATED by '\n'
+
+    

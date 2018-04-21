@@ -48,6 +48,8 @@ footer, header, hgroup, menu, nav, section, img {
 }
 body {
     line-height: 1;
+
+
 }
 ol, ul {
     list-style: none;
@@ -1029,64 +1031,67 @@ a > .sf-sub-indicator {
 .progress {
     float: left
 }
-.ttw-music-player .previous, .ttw-music-player .next {
+.ttw-music-player .previousmp3, .ttw-music-player .nextmp3 {
     height: 10px;
     width: 15px;
     margin: 1px 0;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-.ttw-music-player .previous:hover, .ttw-music-player .next:hover {
-    color: #fff
+.ttw-music-player .previousmp3:hover, .ttw-music-player .nextmp3:hover {
+    color:  #9a598a;
+}
+.ttw-music-player .playmp3:hover, .ttw-music-player .pausemp3:hover {
+    color:  #d10c15;
 }
 div.jp-seeking-bg {
     background: url("images/player/jplayer_seeking.gif") !important;
 }
-.ttw-music-player .play, .ttw-music-player .pause {
+.ttw-music-player .playmp3, .ttw-music-player .pausemp3 {
     width: 8px;
     height: 12px;
     margin: 0 7px;
 }
-.ttw-music-player .previous {
+.ttw-music-player .previousmp3 {
     position: absolute;
     left: 0;
     top: -7px;
     color: #7C7C7C;
 }
-.ttw-music-player .previous:before {
+.ttw-music-player .previousmp3:before {
     font-family: FontAwesome;
     content: "\f04a";
     font-size: 12px !important;
 }
-.ttw-music-player .next {
+.ttw-music-player .nextmp3 {
     position: absolute;
     left: 40px;
     top: -7px;
     color: #7C7C7C;
 }
-.ttw-music-player .next:before {
+.ttw-music-player .nextmp3:before {
     font-family: FontAwesome;
     content: "\f04e";
     font-size: 12px !important;
 }
-.ttw-music-player .play {
+.ttw-music-player .playmp3 {
     position: absolute;
     left: 14px;
     top: -6px;
-    color: #fff;
+    color:  #5e3ebc;
 }
-.ttw-music-player .play:before {
+.ttw-music-player .playmp3:before {
     font-family: FontAwesome;
     content: "\f04b";
     font-size: 12px !important;
 }
-.ttw-music-player .pause {
+.ttw-music-player .pausemp3 {
     position: absolute;
     left: 13px;
     top: -6px;
-    color: #fff;
+    color:  #5e3ebc;
 }
-.ttw-music-player .pause:before {
+.ttw-music-player .pausemp3:before {
     font-family: FontAwesome;
     content: "\f04c";
     font-size: 12px !important;
