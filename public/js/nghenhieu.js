@@ -42,7 +42,6 @@ var activeTrack = 0;
 var playPause = function() {
     if (musicTracker == 'noMusic') {
         audios[activeTrack].play();
-        document.getElementById("song_control").setAttribute("src", audios[activeTrack].src);
         musicTracker = 'playMusic';
     } else {
         audios[activeTrack].pause();
@@ -97,6 +96,7 @@ var backward = function(){
 
 var showPlaying = function(){
     var src = audios[activeTrack].src;
+    document.getElementById("song_control").setAttribute("src", src);
     $(".item_song").removeClass("playing");
     $("div[url='" + src + "']").addClass("playing");
     console.log( $("div[url='" + src + "']"));
