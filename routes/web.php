@@ -22,12 +22,14 @@ Route::get('/Login', function () {
 })->name('Login');
 Route::get('/', 'MusicController@index')->name('home');
 Route::post('/checklogin', 'Login@check')->name('Check_Login');
-Route::view('/nghenhieu', 'NgheNhieu')->name('NgheNhieu');
+Route::get('/nghenhieu', 'CustomController@ngheNhieu')->name('NgheNhieu');
 Route::view('/nghesi', 'NgheSi')->name('NgheSi');
 Route::view('/quocgia', 'QuocGia')->name('QuocGia');
 Route::view('/mv', 'MV')->name('MV');
 Route::view('/theloai', 'TheLoai')->name('TheLoai');
 Route::view('/vip', 'VIP')->name('VIP');
+
+Route::get('nghenhieu/{country}', 'CustomController@ngheNhieu');
 //Route::get('/demo', 'Login@demo')-> name('demo');
 
 //Route::resource([

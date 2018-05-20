@@ -9,14 +9,10 @@
     <script src="js/jquery.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/home.js"></script>
-
 </head>
-
 <body>
 @extends('layouts.masterpage')
 @section('content')
-
-
     <div class="row clearfix mbf">
         <div class="music-player-list">
             <div class="ttw-music-player" style="opacity: 1;">

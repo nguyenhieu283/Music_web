@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\MV;
+use App\Mv;
 use Illuminate\Http\Request;
 
 class MVController extends Controller
