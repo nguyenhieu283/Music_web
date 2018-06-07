@@ -120,11 +120,15 @@ var forward = function(){
     if (musicTracker == 'playMusic') {
         audios[activeTrack].pause();
         increment();
+        audios[activeTrack].muted = true;
         audios[activeTrack].play();
+        showPlaying();
     } else {
         increment();
+        var src = audios[activeTrack].src;
+        var song = document.getElementById("song_control");
+        song.setAttribute("src", src);
     }
-    showPlaying();
 };
 
 var backward = function(){
@@ -135,13 +139,16 @@ var backward = function(){
     }
     if (musicTracker == 'playMusic') {
         audios[activeTrack].pause();
-        //audios[activeTrack].currentTime = 0;
         decrement();
+        audios[activeTrack].muted = true;
         audios[activeTrack].play();
+        showPlaying();
     } else {
         decrement();
+        var src = audios[activeTrack].src;
+        var song = document.getElementById("song_control");
+        song.setAttribute("src", src);
     }
-    showPlaying();
 };
 
 var showPlaying = function(){
