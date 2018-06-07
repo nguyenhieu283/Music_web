@@ -100,22 +100,14 @@ var activeTrack = 0;
     
 var playPause = function() {
     if (musicTracker == 'noMusic') {
+        audios[activeTrack].muted = true;
         audios[activeTrack].play();
         musicTracker = 'playMusic';
+        showPlaying();
     } else {
         audios[activeTrack].pause();
         musicTracker = 'noMusic';
-    }
-    showPlaying();
-};
-
-var stop = function() {
-    if (musicTracker == 'playMusic') {
-        audios[activeTrack].pause();
-        audios[activeTrack].currentTime = 0;
-        audios[activeTrack].play();
-    } else {
-        audios[activeTrack].currentTime = 0;
+        pauseSongPlaying();
     }
 };
 
@@ -154,10 +146,20 @@ var backward = function(){
 
 var showPlaying = function(){
     var src = audios[activeTrack].src;
-    document.getElementById("song_control").setAttribute("src", src);
+    var song = document.getElementById("song_control");
+    song.setAttribute("src", src);
+    if(musicTracker = "playMusic") {
+        song.play();
+    }
     $(".item_song").removeClass("playing");
     $("div[url='" + src + "']").addClass("playing");
     console.log( $("div[url='" + src + "']"));
+};
+
+var pauseSongPlaying = function(){
+    var src = audios[activeTrack].src;
+    var song = document.getElementById("song_control");
+    song.pause();
 };
 </script>
 </html>
