@@ -91,5 +91,23 @@
 		</div><!-- row -->
 	</div><!-- headdown -->
 </header>
+<footer>
+        <div>
+            <div class="foot-menu">
+                <ul>
+                    <li><a href="NewHome.html">Trang chủ</a></li>
+                    <li><a href="TheLoai.html">Thể loại</a></li>
+                    <li><a href="NgheSi.html">Nghệ sĩ</a></li>
+                    <li><a href="MV.html">MV</a></li>
+                    <li><a href="VIP.html">VIP</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div id="toTop">
+                <i class="icon-angle-up"></i>
+            </div><!-- Back to top -->
+        </div>
+    </footer>
 
 @yield('content')
