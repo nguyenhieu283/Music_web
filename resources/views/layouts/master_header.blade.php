@@ -79,9 +79,9 @@
 					<li class="xpopdrop"><a href="{{ route('NgheNhieu') }}" class="sf-with-ul">Nghe nhiều<span class="sf-sub-indicator"><i class="icon-angle-down"></i></span><span class="sub"></span></a>
 						<ul >
 							<li class="xpopdrop"><a href="nghenhieu/vn" class="sf-with-ul">Việt Nam</a></li>
-							<li class="xpopdrop"><a href="nghenhieu/tq">Trung Quốc</a></li>
-							<li class="xpopdrop"><a href="nghenhieu/am">Âu Mĩ</a></li>
-							<li class="xpopdrop"><a href="nghenhieu/hq">Hàn Quốc</a></li>
+							<li class="xpopdrop"><a href="tq">Trung Quốc</a></li>
+							<li class="xpopdrop"><a href="am">Âu Mĩ</a></li>
+							<li class="xpopdrop"><a href="hq">Hàn Quốc</a></li>
 						</ul>
 					</li>
 					<li class="xpopdrop"><a href="{{ route('VIP') }}" class="sf-with-ul">VIP<span class="sf-sub-indicator"><i class="icon-angle-down"></i></span><span class="sub"></span></a>
