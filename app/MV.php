@@ -4,11 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class MV extends Model
+class Mv extends Model
 {
     protected $fillable = [
         'id',
         'name',
+        'src',
         'single',
         'type',
         'national',

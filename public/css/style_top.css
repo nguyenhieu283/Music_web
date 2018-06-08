@@ -1,0 +1,124 @@
+.vn1 {
+	position: absolute;
+    top: 22%;
+    left: 10%;
+    width: 50%;
+    height: 100%;
+    background: #ffffff;
+    font-size: 20px;
+    border: 1px solid white;
+
+}
+.a1{
+	font-size: 20px;
+	color: red;
+	margin-top: 20px;
+
+}
+.vn2 {
+    position: absolute;
+    top: 22%;
+    left: 60%;
+    width: 30%;
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid white;
+}
+.a2 {
+    font-size: 12px;
+    color: black;
+    margin-left: 10px;
+}
+.a3{
+    font-size: 14px;
+    padding: 5px;
+    background: white;
+    color: black;
+    margin:5px;
+}
+.a3:hover{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+.a3:action{
+    color: green;
+    border-bottom: 2px solid blue;
+}
+.vn3 {
+    position: absolute;
+    top: 200px;
+    left: 1%;
+    width: 97%;
+    height: 40px;
+    background: #eeeeee;
+    border: 1px solid #eeeeee;
+}
+.a4{
+
+    margin-left: 35px;
+    background: #eeeeee;
+    color: black;
+
+}
+.a4:hover{
+    color: blue;
+}
+.a4:action{
+    color: green;
+}
+.vn4 {
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    width: 97%;
+    height: 15%;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+.vn4:hover{
+    background: #eeeeee;
+    border-bottom: 2px solid blue;
+}
+.vn4:action{
+    background: #eeeeee;
+    border-bottom: 2px solid blue;
+}
+.vn5 {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    width: auto;
+    height: auto;
+    background: #ffffff;
+}
+.vn6 {
+    position: absolute;
+    top: 22%;
+    left: 60%;
+    width: 5%;
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid white;
+}
+.vn7 {
+    position: absolute;
+    top: 22%;
+    left: 65%;
+    width: 25%;
+    height: 100%;
+    background: #ffffff;
+    border: 1px solid white;
+}
+
+.a4{
+    background: white;
+    margin:5px;
+}
+.a4:hover{
+    color: blue;
+    background: white;
+}
+.a4:action{
+    color: green;
+    background: white;
+}
