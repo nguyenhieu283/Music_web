@@ -7,7 +7,7 @@
 			</div>
 
 			<div class="social social-head">
-				<a href="http://fb.com/theme20" target="_blank" original-title="Like us on Facebook">
+				<a href="http://facebook.com" target="_blank" original-title="Like us on Facebook">
 					<i class="icon-facebook"></i>
 				</a>
 				<a href="http://youtube.com/" target="_blank" original-title="YouTube">
