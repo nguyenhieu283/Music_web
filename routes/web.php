@@ -29,7 +29,7 @@ Route::view('/mv', 'MV')->name('MV');
 Route::view('/theloai', 'TheLoai')->name('TheLoai');
 Route::view('/vip', 'VIP')->name('VIP');
 
-Route::get('nghenhieu/{country}', 'CustomController@ngheNhieu');
+Route::get('nghenhieu/{country}', 'CustomController@ngheNhieuCountry');
 //Route::get('/demo', 'Login@demo')-> name('demo');
 
 //Route::resource([
