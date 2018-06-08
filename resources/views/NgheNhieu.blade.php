@@ -74,10 +74,10 @@ document.getElementById("btn_pre").onclick = function() {
 var swapImage = function() {
     var image = document.getElementById('btn_play');
     if (imageTracker == 'playImage') {
-        image.src = '../image/pause.ico';
+        image.src = 'http://localhost:8080/Music_web/public/image/pause.ico';
         imageTracker = 'stopImage';
     } else {
-        image.src = '../image/play.ico';
+        image.src = 'http://localhost:8080/Music_web/public/image/play.ico';
         imageTracker = 'playImage';
     }
 };
